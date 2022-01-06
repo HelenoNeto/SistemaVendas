@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_gerencial_subreport_contas_receber" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2a692aa0-5064-4fa5-bfc6-c57cc22f224d">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="252"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select cr.id as codigoConta, cr.data_emissao as dataEmissaoConta,
+                            c.id as codigoCliente, c.nome as nomeCliente,
+                            p.id as codigoParcela, p.data_vencimento, p.parcela,
+                            phr.data_recebimento as dataPagamentoParcela, p.valor as valorParcela,
+                            sum(phr.valor_recebido) as valorPagoParcela, p.status as statusParcela
+							from contas_receber cr
+                            INNER JOIN parcelas_receber p ON cr.id = p.id_contas_receber INNER JOIN cliente c
+                            ON c.id = cr.id_cliente LEFT JOIN parcelas_receber_historico_recebimento phr
+                            ON p.id = phr.id_parcelas_receber WHERE p.status not like 'PG' and
+                            p.data_vencimento <= current_date
+                            and c.id like '%' and not cr.excluido group by p.id_contas_receber;]]>
+	</queryString>
+	<field name="codigoConta" class="java.lang.Integer"/>
+	<field name="dataEmissaoConta" class="java.sql.Date"/>
+	<field name="codigoCliente" class="java.lang.Integer"/>
+	<field name="nomeCliente" class="java.lang.String"/>
+	<field name="codigoParcela" class="java.lang.Integer"/>
+	<field name="data_vencimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="parcela" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataPagamentoParcela" class="java.sql.Date"/>
+	<field name="valorParcela" class="java.math.BigDecimal"/>
+	<field name="valorPagoParcela" class="java.math.BigDecimal"/>
+	<field name="statusParcela" class="java.lang.String"/>
+	<variable name="valorPagar" class="java.math.BigDecimal">
+		<variableExpression><![CDATA[$F{valorParcela}.subtract($F{valorPagoParcela})]]></variableExpression>
+	</variable>
+	<variable name="totalAReceber" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$V{valorPagar}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="13" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="13" uuid="55152b0c-7d33-4b28-b29d-f5a2762d5d72"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Contas a Receber]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="11" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="11" backcolor="#CCCCFF" uuid="57d57acc-ad7c-4039-a526-2840cf69100f"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="40" height="11" uuid="6ca0f90c-3b8b-43ef-8f78-a8a596cc1249"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Conta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="0" width="36" height="11" uuid="bbe97a06-9a69-4103-bb88-4a390b23517b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[D. Emi.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="0" width="140" height="11" uuid="3b860442-0de4-4b2c-8cf0-b9b3fbe36c1c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="0" width="39" height="11" uuid="ca8ac028-3db1-4c82-88f3-1d9f4294586d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[C. Parc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="0" width="39" height="11" uuid="66eec8ab-5689-43ea-809a-abb86e87ae8e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[D. Venc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="0" width="35" height="11" uuid="ca501fa3-bf69-4cf3-a4a3-8926d1e4094e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Parcela]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="0" width="37" height="11" uuid="2a4cdeb6-f283-4a3d-8cdb-b290fc9eab8e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Parc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="0" width="40" height="11" uuid="67acaa26-3b7e-4f5a-a6d8-bc7e9c3b92d2"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[D. Pgto.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="0" width="36" height="11" uuid="82b4d16d-efed-4bcf-9daa-d7c181e7b8d1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="0" width="48" height="11" uuid="11353453-d882-435d-9ed3-e2ffd6c13203"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="511" y="0" width="43" height="11" uuid="19058f90-9852-4362-972e-75b9d26c82d6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Rec.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="9" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="40" height="9" uuid="9d0ca860-3f01-4fd0-a63b-1ed049aae9f5"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoConta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="0" width="140" height="9" uuid="399b96f1-86b6-4fb4-b896-aa0eac32dfe7"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoCliente}.toString() + " - " + $F{nomeCliente}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="40" y="0" width="36" height="9" uuid="d71a2cbc-2a33-4119-85ce-6d8e2d4461f0"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataEmissaoConta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="0" width="39" height="9" uuid="f16e3881-ea30-44a7-a35a-8fec1f541863"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoParcela}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="262" y="0" width="39" height="9" uuid="810f72b7-9fa0-4d07-8532-23ccd7fc2cd1"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data_vencimento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="0" width="35" height="9" uuid="6ac93375-f619-4adf-8f6f-1a75fcd30cbd"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parcela}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="426" y="0" width="40" height="9" uuid="7bbb09cd-d991-4ae5-a038-44268e9bbd98"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dataPagamentoParcela}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="386" y="0" width="37" height="9" uuid="ed5cf56f-9419-4b97-b7e5-996bafd2b49b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorParcela}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="469" y="0" width="36" height="9" uuid="c85d9c24-6357-477b-ad33-527cde4203a6"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorPagoParcela} == null ? 0 : $F{valorPagoParcela}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="0" width="48" height="9" uuid="f13c10df-c28c-48fb-8f91-015c20d326b8"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{statusParcela}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)" isBlankWhenNull="true">
+				<reportElement x="511" y="0" width="43" height="9" uuid="40f205d7-7801-44c8-90b6-41f5226f3027"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{valorPagar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="17" splitType="Stretch">
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement mode="Opaque" x="494" y="4" width="60" height="13" backcolor="#CCCCFF" uuid="ec4c8c4b-46c8-41d0-a11b-61c2c331b4c9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalAReceber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="4" width="84" height="13" backcolor="#CCCCFF" uuid="9b3a679e-dfa9-4a10-9b96-db3d4f24b1e2"/>
+				<textElement textAlignment="Right">
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total a Receber:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

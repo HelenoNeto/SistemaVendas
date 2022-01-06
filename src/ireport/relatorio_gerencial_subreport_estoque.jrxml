@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_gerencial_subreport_visita_cliente" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5d4e5b6c-dafd-430d-9405-effada480594">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="429"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="NomeFantasia" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select p.codigo, p.descricao, p.qtd_estoque, p.valor_compra, p.valor_venda from produto p where not p.excluido;]]>
+	</queryString>
+	<field name="codigo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qtd_estoque" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_compra" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[Valor de compra do produto.]]></fieldDescription>
+	</field>
+	<field name="valor_venda" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="13">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="13" uuid="968888e0-5e14-47a3-aa6f-a73fab25bfb9"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Estoque]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="11" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="11" backcolor="#CCCCFF" uuid="c15ab4d2-29f4-40ea-8ceb-4e2e94e6d8db"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="380" height="11" uuid="bca3d633-f01e-4c87-9d47-abda5fd14f9d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Produto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="60" height="11" uuid="e01ec216-604f-48bd-87a4-2357d201d1d0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Qtd. Estoque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="63" height="11" uuid="1019901d-2771-48ac-8314-fcf57e3ea275"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Valor Compra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="0" width="52" height="11" uuid="68765693-ffc7-44a6-b8f0-fb0849781ba1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Valor Venda]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="9" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="380" height="9" uuid="90e0902d-c8b6-4600-b016-cde96d5cca9f"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigo} + " - " + $F{descricao}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="380" y="0" width="60" height="9" uuid="37e34b4b-f4f5-4755-87c3-38e800f22271"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qtd_estoque}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="440" y="0" width="63" height="9" uuid="bf65d00c-66b0-4e70-8d33-358e2f2eb161"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valor_compra}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="503" y="0" width="52" height="9" uuid="03f07160-42f5-4891-aeab-f2f21fee2e8e"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valor_venda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
