@@ -1,0 +1,29 @@
+CREATE TABLE  `fornecedor` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `RAZAO_SOCIAL` varchar(100) NOT NULL,
+  `EXCLUIDO` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `nota_entrada` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `codigo` VARCHAR(45) NOT NULL,
+  `id_fornecedor` INTEGER UNSIGNED NOT NULL,
+  `data_emissao` DATE NOT NULL,
+  `data_entrada` DATE NOT NULL,
+  `total` DECIMAL(20,6) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `nota_entrada_produto` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `id_nota_entrada` INTEGER UNSIGNED NOT NULL,
+  `descricao_produto` VARCHAR(100) NOT NULL,
+  `id_produto` INTEGER UNSIGNED NOT NULL,
+  `quantidade` DECIMAL(20,6) NOT NULL,
+  `preco_uni` DECIMAL(20,6) NOT NULL,
+  `total` DECIMAL(20,6) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;

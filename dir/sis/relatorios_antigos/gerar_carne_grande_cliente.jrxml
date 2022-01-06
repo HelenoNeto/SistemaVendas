@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="gerar_carne_grande_cliente" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e41039fd-d2fb-4419-b43c-79d44cac0679">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM cliente, contas_receber, parcelas_receber , emitentes
+                    WHERE contas_receber.id_cliente LIKE '%' AND
+                    contas_receber.id_contas_receber = '1' AND
+                    contas_receber.id_cliente = cliente.ID AND
+                    parcelas_receber.id_contas_receber = contas_receber.id_contas_receber AND
+                    parcelas_receber.pago LIKE 'NAO' AND parcelas_receber.parcelas <> 'ENTRADA'  and cliente.excluido <> 1
+                    and contas_receber.excluido <> 1]]>
+	</queryString>
+	<field name="CODIGO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CPF_CNPJ" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATA_NASC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OBSERVACAO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LIMITE" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ENDERECO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BAIRRO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MUNICIPIO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ESTADO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TELEFONE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESDE" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RG" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CEP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TIPO_PESSOA" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMAIL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SPC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOME_FANTASIA" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CELULAR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMPLEMENTO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_SITUACAO_CLI" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INSCRICAO_ESTADUAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INSCRICAO_MUNICIPAL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NUMERO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ORGAO_RG" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CREDIARIO" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_FUNCIONARIO" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATA_CADASTRO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COD_MUNICIPIO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATA_EDICAO" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATA_EXCLUSAO" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATA_INSERCAO" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EXCLUIDO" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_USUARIO_EDICAO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_USUARIO_EXCLUSAO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID_USUARIO_INSERCAO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SINCRONIZADO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="caminho_foto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_contas_receber" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_cliente" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_emissao" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_vencimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="documento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="entrada" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="forma_parcela" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lancamento" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero_parcelas" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="referente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_total" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_parcelas_receber" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_pagamento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_vencimento_parcelas_receber" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lancamentoReceber" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pago" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="parcelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_pagar" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor_pago" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_emissao_parcela" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nossoNumero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ultimo_valor_pago" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bairro_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cep_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cnae_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cod_municipio_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cod_pais_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="complemento_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_cadastro_emitente" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ie_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ie_subst_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="im_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="municipio_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_fantasia_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero_documento_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pais_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="razao_social_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_documento_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="uf_emitente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="logomarca" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="senha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="crt" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aliq_para_calculo_credito" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="267" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="197" height="17" uuid="3da93f1b-9d5c-41b9-8fa5-2ceed8542028"/>
+				<box>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="1.5"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{nome_fantasia_emitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="17" width="197" height="20" uuid="068c3ef1-69aa-402f-b409-df5e3d925373"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Telefone: " +$F{telefone_emitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="37" width="197" height="35" uuid="b26b2454-f4df-4e0b-8573-a170b1411b73"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[" Cliente:" +"   "+"\n " +$F{NOME}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="72" width="197" height="28" uuid="f6fd902f-cb93-4d9b-b973-09f38c6cf493"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[" Número Pedido:" + "\n" + "                                        "+$F{documento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="100" width="197" height="34" uuid="ccc5ad8b-dbdd-4985-a393-dc30f7406d01"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[" Parcela N:" + "\n" + "                                        "+$F{parcelas}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="112" y="147" width="85" height="12" uuid="67f195af-bbfc-4d77-a805-534167a59743"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{data_vencimento_parcelas_receber}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="112" y="175" width="85" height="14" uuid="b621cbe4-cce2-4aeb-a43e-4c2d696da357"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="189" width="197" height="25" uuid="4d1c1779-f79c-4fd9-acd0-7f6f07e6f4fe"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[ Desconto R$:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="214" width="197" height="25" uuid="2cadf876-aac7-440b-a262-1e84f86d9104"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[ Juros R$:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="239" width="197" height="27" uuid="dc0d5f9e-a07c-4498-b4c7-163789627efd"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Total R$:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="197" y="0" width="358" height="37" uuid="d863142b-f752-43ea-9a93-0bc776be8bdb"/>
+				<box>
+					<topPen lineWidth="1.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{nome_fantasia_emitente} + "\n" +" Telefone: " +$F{telefone_emitente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="134" width="197" height="13" uuid="2d337aa9-c4c0-42be-8d47-310999c6aa38"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[ Vencimento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="159" width="197" height="16" uuid="21c1e94d-f1a1-4531-876c-e4999b2036d1"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Valor da Prestação:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="175" width="112" height="14" uuid="64e98dc6-dc3c-4dd3-a6e2-5c1960be1db2"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[                                        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="147" width="112" height="12" uuid="4da9324e-68eb-4492-ac22-d812b315e0af"/>
+				<box>
+					<leftPen lineWidth="1.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[                                        ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="197" y="37" width="358" height="35" uuid="db3a3e26-908d-41ca-92cf-2f8a909ac3eb"/>
+				<box>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textFieldExpression><![CDATA[" Cliente : " + $F{NOME} +
+"\n" + " Endereço : " +$F{ENDERECO} +" - "+$F{NUMERO}+" "+$F{BAIRRO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="197" y="72" width="252" height="28" uuid="025d07f1-d187-4515-bd63-7a4d96f140cc"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  Número do Pedido:                        Parcela:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="197" y="100" width="252" height="34" uuid="ef3bd2a5-a0fa-4fdb-aea0-1f45566a29ce"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA["      " +$F{documento} + "                                                               " +$F{parcelas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="449" y="72" width="106" height="16" uuid="988fe530-c2de-4bbf-b7c5-96fef83f09ba"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Vencimento:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="467" y="88" width="88" height="13" uuid="cde8ee45-6347-4e1e-803d-506ff034c236"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{data_vencimento_parcelas_receber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="449" y="88" width="18" height="13" uuid="bb85c8a1-c5f8-4489-9893-2fd647e4b1cb"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="101" width="106" height="17" uuid="f277ded6-d9dc-4b06-b8e3-d10db17a3e2f"/>
+				<box>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Valor:]]></text>
+			</staticText>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="467" y="118" width="88" height="16" uuid="2e386ed5-26ba-4234-947d-eabf19e259bf"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="449" y="118" width="18" height="16" uuid="299e72dd-a2cb-479a-9b74-a901bc20956f"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="175" width="252" height="91" uuid="4e036601-da75-4d53-824f-c8cb0fef5202"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+					<paragraph lineSpacing="1_1_2" leftIndent="4"/>
+				</textElement>
+				<text><![CDATA[          Vencido em 9 dias enviamos cobrança, para evitar constragimento, informe-nos sobre sua     posição quando a data que V. Sra. pretende acertar o pagamento.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="159" width="252" height="16" uuid="0e365223-4b0d-4e97-b918-a3b8096a780c"/>
+				<box>
+					<leftPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[   Intruções:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="134" width="252" height="27" uuid="0d868282-d1ed-446b-88c3-8b2acb3bcb88"/>
+				<box>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="134" width="106" height="42" uuid="fca50b3e-73f7-46e8-b790-20de165af5a9"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Desconto:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="176" width="106" height="43" uuid="5bdb78ac-1177-48b3-8f56-1f3313342090"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Juros:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="219" width="106" height="47" uuid="70a4ee44-64fb-4060-929f-ff5291457680"/>
+				<box>
+					<bottomPen lineWidth="1.5"/>
+					<rightPen lineWidth="1.5"/>
+				</box>
+				<text><![CDATA[ Total R$:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

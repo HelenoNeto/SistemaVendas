@@ -1,0 +1,15 @@
+﻿TRUNCATE cliente;
+TRUNCATE cliente_vasilhame;
+TRUNCATE contas_receber;
+TRUNCATE empresa;
+TRUNCATE fornecedor;
+TRUNCATE funcionario;
+TRUNCATE grupo;
+TRUNCATE nota_entrada;
+TRUNCATE nota_entrada_produto;
+TRUNCATE parcelas_receber;
+TRUNCATE parcelas_receber_historico_recebimento;
+TRUNCATE produto;
+TRUNCATE tipo_pagamento;
+TRUNCATE venda_cabecalho;
+TRUNCATE venda_detalhe;

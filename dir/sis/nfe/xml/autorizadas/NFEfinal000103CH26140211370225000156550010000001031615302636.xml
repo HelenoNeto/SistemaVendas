@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
+
+
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe Id="NFe26140211370225000156550010000001031615302636" versao="2.00">
+    <ide>
+      <cUF>26</cUF>
+      <cNF>61530263</cNF>
+      <natOp>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</natOp>
+      <indPag>1</indPag>
+      <mod>55</mod>
+      <serie>1</serie>
+      <nNF>103</nNF>
+      <dEmi>2014-02-12</dEmi>
+      <tpNF>1</tpNF>
+      <cMunFG>2601300</cMunFG>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV>6</cDV>
+      <tpAmb>2</tpAmb>
+      <finNFe>1</finNFe>
+      <procEmi>0</procEmi>
+      <verProc>1.01</verProc>
+    </ide>
+    <emit>
+      <CNPJ>11370225000156</CNPJ>
+      <xNome>DANIEL ALVES DA SILVA</xNome>
+      <xFant>FRIGORIFICO FORTALEZA</xFant>
+      <enderEmit>
+        <xLgr>AVENIDA AFONSO ALVES</xLgr>
+        <nro>122</nro>
+        <xCpl>SR.MIGUEL</xCpl>
+        <xBairro>NOVA ESPERANCA</xBairro>
+        <cMun>2601300</cMun>
+        <xMun>BARRA DE GUABIRABA</xMun>
+        <UF>PE</UF>
+        <CEP>55690000</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>8137581076</fone>
+      </enderEmit>
+      <IE>038979667</IE>
+      <CRT>2</CRT>
+    </emit>
+    <dest>
+      <CPF>07403733401</CPF>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>RUA LIMA BARRETO</xLgr>
+        <nro>1010</nro>
+        <xBairro>DIVINOPOLIS</xBairro>
+        <cMun>2604106</cMun>
+        <xMun>CARUARU</xMun>
+        <UF>PE</UF>
+        <CEP>55010330</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>8137219355</fone>
+      </enderDest>
+      <IE>ISENTO</IE>
+      <email>NETO_HELENO1@HOTMAIL.COM</email>
+    </dest>
+    <det nItem="1">
+      <prod>
+        <cProd>3</cProd>
+        <cEAN/>
+        <xProd>CERVEJA SKOL LATAO 12X473ML ESSE NAO</xProd>
+        <NCM>22030000</NCM>
+        <CFOP>5102</CFOP>
+        <uCom>FD</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>3.0000</vUnCom>
+        <vProd>3.00</vProd>
+        <cEANTrib/>
+        <uTrib>FD</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>3.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <PIS>
+          <PISNT>
+            <CST>04</CST>
+          </PISNT>
+        </PIS>
+        <COFINS>
+          <COFINSNT>
+            <CST>04</CST>
+          </COFINSNT>
+        </COFINS>
+      </imposto>
+    </det>
+    <total>
+      <ICMSTot>
+        <vBC>0.00</vBC>
+        <vICMS>0.00</vICMS>
+        <vBCST>0.00</vBCST>
+        <vST>0.00</vST>
+        <vProd>3.00</vProd>
+        <vFrete>0.00</vFrete>
+        <vSeg>0.00</vSeg>
+        <vDesc>0.00</vDesc>
+        <vII>0.00</vII>
+        <vIPI>0.00</vIPI>
+        <vPIS>0.00</vPIS>
+        <vCOFINS>0.00</vCOFINS>
+        <vOutro>0.00</vOutro>
+        <vNF>3.00</vNF>
+      </ICMSTot>
+    </total>
+    <transp>
+      <modFrete>0</modFrete>
+      <transporta>
+        <CNPJ>09033813000152</CNPJ>
+        <xNome>A PEREIRA DIAS JUNIOR</xNome>
+        <IE>031471692</IE>
+        <xEnder>RUA PADRE PEDRO PAES</xEnder>
+        <xMun>BELO JARDIM</xMun>
+        <UF>PE</UF>
+      </transporta>
+      <veicTransp>
+        <placa>XXX9999</placa>
+        <UF>PE</UF>
+      </veicTransp>
+    </transp>
+  </infNFe>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#NFe26140211370225000156550010000001031615302636"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>LCBIyofDtJ2sKor1i07lxobbQ7M=</DigestValue></Reference></SignedInfo><SignatureValue>VTcG0yu2nltaOjL9QdXtx5wPrdVDL4RB0+aC7qyxp1V6VRtxxj9je7TKJAZquVWtcF26X7UCIg7d
+qwH7lWciCQEvMCjKhuOrHEUbAtqJFE17zCLovR9T4tYSaWP9U3PoL+d15kTQDnwg29Dlho4iyQUJ
+bFr9/XmYHo8WrIjCnpXO8XwY7yH2nL/JNGqxG8Y+TfGc5R8LP5xAf7TxJuv2nvWVD51LH9nMkNaO
+sxjjHQLxpsSF5J/ZkpxmZNkV27DW2yM75U168pZBzxu6XZ7GQu2uue1SpP+mNjd4eLUf0BbofCCZ
+KbbkZXLtrxWdnfqeDInavWKsDtU17iIjZOQVMg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIZDCCBkygAwIBAgIQe6bqdn8uwMQyWZcK/Kz9kjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh
+IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4X
+DTEzMDYyMTAwMDAwMFoXDTE0MDYyMDIzNTk1OVowggEEMQswCQYDVQQGEwJCUjETMBEGA1UEChQK
+SUNQLUJyYXNpbDELMAkGA1UECBMCUEUxGzAZBgNVBAcUEkJBUlJBIERFIEdVQUJJUkFCQTE2MDQG
+A1UECxQtU2VjcmV0YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYD
+VQQLFA1SRkIgZS1DTlBKIEExMS4wLAYDVQQLFCVBdXRlbnRpY2FkbyBwb3IgQVIgUkcgRW1wcmVl
+bmRpbWVudG9zMTYwNAYDVQQDEy1KIE0gREUgT0xJVkVJUkEgRlJJR09SSUZJQ08gTUU6MTEzNzAy
+MjUwMDAxNTYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+JHTYb3LOtUwNgfkqgfA1
+UB/jUYxavs+OeAte2NW/VY7GkqzvIZrayWi23BIL+PV147ghiaY/6nZkXuDJfYX/PV7wTBEXMi/r
+SDgwTPTPupvI2N28uSBrEZeaZde/hMC3Lypy8HdYVQNJnQmlYM2YpNtAGtLq56daL0Gvd7ThPSAw
+hTMKja/ZRurGWkZwgJPYVMZGOobhB42mHtrw52+wLLq3mdp1llvJKEK3Pgkj/RdxY0Azk7Tzb/cY
+T8qWwD21YUAccAlvc6qkXN+mJrxZbaLvzmRk66Ju4zKwuidBMFZZXyvsN6AwvPqgPJh26K3DLtuY
+42mfzwdwyP5b03RlAgMBAAGjggNaMIIDVjCBvwYDVR0RBIG3MIG0oD0GBWBMAQMEoDQEMjE0MDcx
+OTgwMDM1NDQ2Nzg0MDMwMDAwMDAwMDAwMDAwMDAwMDAwNjEwNDQ2N1NTUFBFoCIGBWBMAQMCoBkE
+F0pPU0UgTUlHVUVMIERFIE9MSVZFSVJBoBkGBWBMAQMDoBAEDjExMzcwMjI1MDAwMTU2oBcGBWBM
+AQMHoA4EDDAwMDAwMDAwMDAwMIEbYm9uaXRvY29udGFiaWxAeWFob28uY29tLmJyMAkGA1UdEwQC
+MAAwHwYDVR0jBBgwFoAULpHq1m3lslmC3DiFKXY0FlY80D4wDgYDVR0PAQH/BAQDAgXgMH8GA1Ud
+IAR4MHYwdAYGYEwBAgEMMGowaAYIKwYBBQUHAgEWXGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2ln
+bi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9SRkIvRFBDX0FDX0NlcnRpc2ln
+bl9SRkIucGRmMIIBFgYDVR0fBIIBDTCCAQkwV6BVoFOGUWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRp
+c2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzQvTGF0ZXN0Q1JMLmNy
+bDBWoFSgUoZQaHR0cDovL2ljcC1icmFzaWwub3V0cmFsY3IuY29tLmJyL3JlcG9zaXRvcmlvL2xj
+ci9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9yZXBvc2l0b3Jp
+by5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25SRkJHNC9MYXRlc3RD
+UkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBmwYIKwYBBQUHAQEEgY4wgYsw
+XwYIKwYBBQUHMAKGU2h0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9y
+aW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9SRkJfRzQucDdjMCgGCCsGAQUFBzABhhxodHRw
+Oi8vb2NzcC5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQBowSkKYipmWrBcB8/N
+nGW3DmOyRIUUcw1bwSblKjj6YLGB4hcytDdmPrBcuZ9vgZ7QSIbwkODRQ4UTjeLtAE9azj8CLaS9
+UY9AusHDcTIJFWw6jXKcpaH753iaDuEk6fDBaLwbQYCtC/WFPLWBHpVFc1JgmoP4yRIr/lZJAJA7
+k3iSA0F5qZEtZxtpP4T+YX90oHNZLsT/QATWipRE8MqJdNPX8NvAudwvYYxJBU3Vt3zjQTeCDZKs
+ttX/yheqTL3mUehVkHVRQjdBsbFQYflVHzDBZolbPK8dtwdK535QPQn+lpnJwiQW2vv+K6djgjrm
+sk09ah+/E1PJQzNTo30A3wjZMt6ZG7KJuIwGvZ5zcDcI1bwdqaRvnqsacmh1iaFLgfh9NWi1X67x
+Yw+7tAQxvESU05CilAXNS42n3iTooWiJywhZOK5SShH62gZoXT9CJApdwWqzdx4MHYLZG++5Ghaj
+CkFBeeeqnG3qxoCgpU70TPS9Zb7nieX+p7L5ICIiC0gEwbe/ClUsrRi/SQGGVrhB1c4OOCH+d1hU
+S1uVAfdULLc/3UyRIEoHjASs1m5wPFwTKB1YtmPMtz0mHhrHegog89vaW9KWwGcxnrR/Ieq2qKof
+7HhDWAF+dMQTEiQAIEag9kC88aaGF60lp/Xr5uAP3Kx0lVEJ+nvpwFTfHA==</X509Certificate></X509Data></KeyInfo></Signature></NFe>
+
+<protNFe versao="2.00"><infProt Id="NFe1"><tpAmb>2</tpAmb>
+<verAplic>NFEPE_H_08.03.04.048</verAplic>
+<chNFe>26140211370225000156550010000001031615302636</chNFe>
+<dhRecbto>2014-02-12T12:10:11</dhRecbto><nProt>126140000049425</nProt>
+<digVal>LCBIyofDtJ2sKor1i07lxobbQ7M=</digVal><cStat>100</cStat>
+<xMotivo>Autorizado o uso da NF-e</xMotivo>
+</infProt></protNFe>
+</nfeProc>

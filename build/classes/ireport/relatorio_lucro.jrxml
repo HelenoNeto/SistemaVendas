@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_gerencial_subreport_lucro" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="73d0f656-a32f-4329-bb2d-28100fecc540">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="NomeFantasia" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select
+	   concat(p.codigo, ' - ', p.descricao) as produto,
+	   round(p.valor_compra,2) as ValorCompraProduto,
+	   round(p.lucro,2) as lucroProduto,
+	   round(vd.valor_unitario,2) as valorVendaProduto,
+	   round(sum(vd.quantidade),2) as quantidadeTotal,
+	   round((vd.valor_unitario * sum(vd.quantidade)), 2) valorTotalProduto,
+	   round((vd.valor_unitario * sum(vd.quantidade)) * (p.lucro/100),2) as lucroTotal
+from venda_cabecalho vc inner join venda_detalhe vd on vc.id = vd.venda_cabecalho_id
+inner join produto p on vd.produto_id = p.id
+inner join tipo_pagamento tp on vc.tipo_pagamento_id = tp.id
+inner join funcionario f on vc.funcionario_id = f.id
+where date_format(vc.data_venda, '%Y-%m-%d') between '2015-12-01' and '2016-01-17' group by p.id, vd.valor_unitario;]]>
+	</queryString>
+	<field name="produto" class="java.lang.String"/>
+	<field name="ValorCompraProduto" class="java.math.BigDecimal"/>
+	<field name="lucroProduto" class="java.math.BigDecimal"/>
+	<field name="valorVendaProduto" class="java.math.BigDecimal"/>
+	<field name="quantidadeTotal" class="java.math.BigDecimal"/>
+	<field name="valorTotalProduto" class="java.math.BigDecimal"/>
+	<field name="lucroTotal" class="java.math.BigDecimal"/>
+	<variable name="lucroTotal" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{lucroTotal}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="38">
+			<staticText>
+				<reportElement x="412" y="25" width="68" height="13" uuid="e11758da-4787-4e51-9499-ef6ff9c488b4"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Data Emissão:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="480" y="25" width="74" height="13" uuid="67f9235c-45a7-4462-9907-2af55c684146"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="554" height="20" uuid="c632f434-769e-410a-b893-f987c6731e93"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NomeFantasia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="13" uuid="8fea306c-e821-4e4e-9525-066600c7a509"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Lucro]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="11" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="11" isPrintWhenDetailOverflows="true" backcolor="#CCCCFF" uuid="0eb9c0d1-f996-44c7-9f2e-7da226da5ac8"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="11" uuid="b00aa3d4-0bab-43e8-8337-303a49ed6dea"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Produto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="0" width="56" height="11" uuid="7430b734-1bcc-42bc-ab91-b6832ace148b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Compra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="0" width="55" height="11" uuid="8fd956a4-70c8-4729-9f5c-8094a6b86c5e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Lucro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="53" height="11" uuid="c21f47b5-489c-46d8-9001-c4bef243ca83"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="0" width="49" height="11" uuid="042d30f3-3aaf-4d13-8259-4e0fefab9156"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Qtd. Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="50" height="11" uuid="904be5b4-24f3-4ca9-b5b5-8b956a6c3fde"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[V. Total P.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="54" height="11" uuid="ccbe297f-f454-4d02-8a74-ade29f05fdd3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Lucro Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="9" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="237" height="9" uuid="35276446-3772-45cf-a028-b54951077fbc"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{produto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="237" y="0" width="56" height="9" uuid="784dcdca-976e-4bb4-a27d-2bc2938a69f8"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ValorCompraProduto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="348" y="0" width="53" height="9" uuid="bb02e1be-0d73-46c3-9115-8cd7ef798af3"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorVendaProduto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="293" y="0" width="55" height="9" uuid="15c3c518-be78-4dac-99e5-465a76de343e"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lucroProduto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="401" y="0" width="49" height="9" uuid="c3abb272-062d-47de-88f0-88eb486572c1"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantidadeTotal}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="450" y="0" width="50" height="9" uuid="65463ed2-0448-4157-ac42-57fd09ba0f54"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorTotalProduto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement x="500" y="0" width="54" height="9" uuid="4255a973-a139-42d1-92fa-12e114ec8960"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lucroTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="397" y="5" width="100" height="13" backcolor="#CCCCFF" uuid="f7d3c5d8-605e-422b-9ee4-d182634fd8b2"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Lucro Total Geral:]]></text>
+			</staticText>
+			<textField pattern="###0.00;(###0.00)">
+				<reportElement mode="Opaque" x="497" y="5" width="58" height="13" backcolor="#CCCCFF" uuid="925c0c54-6a2b-4582-9b24-878fb16e4edc"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{lucroTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

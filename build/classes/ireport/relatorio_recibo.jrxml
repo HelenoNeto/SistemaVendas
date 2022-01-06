@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Relatorio_recibo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1c917572-020f-4fe0-bf04-ce1f2f15b2f7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DEV-03 - gtech-gestao-g3"/>
+	<parameter name="nome_fantasia" class="java.lang.String"/>
+	<parameter name="cnpj" class="java.lang.String"/>
+	<parameter name="valor" class="java.math.BigDecimal"/>
+	<parameter name="extenso" class="java.lang.String"/>
+	<parameter name="referente" class="java.lang.String"/>
+	<parameter name="endereco" class="java.lang.String"/>
+	<parameter name="numero" class="java.lang.String"/>
+	<parameter name="municipio" class="java.lang.String"/>
+	<parameter name="bairro" class="java.lang.String"/>
+	<parameter name="telefone" class="java.lang.String"/>
+	<parameter name="conta" class="java.lang.String"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="numeroParcela" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM EMPRESA]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="razao_social" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="uf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pais" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cod_pais" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome_fantasia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_cadastro" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endereco" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="num_end" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="comp_end" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bairro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cep" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cod_municipio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="municipio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_documento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cnpj" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ie" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="72">
+			<image>
+				<reportElement x="0" y="0" width="555" height="72" uuid="670867be-6e7b-49ea-b5af-756dd69d6c04"/>
+				<imageExpression><![CDATA["C:\\Sistema\\logoPM.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="572" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="72" width="555" height="35" uuid="208a4422-b74b-4763-92a4-abae6a8cfc56"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECIBO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="48" y="381" width="221" height="49" uuid="b2d950dc-9a0a-4619-b987-98ef4de9d05c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="48" y="430" width="221" height="20" uuid="7762a83a-f81e-4ab1-bd77-dffcdc5a9fd5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="48" y="450" width="221" height="20" uuid="afea8823-bb38-45d2-a27f-91de10a79d4d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="381" width="119" height="49" uuid="01323de4-03bb-49b9-9a26-ffd933c18590"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="430" width="119" height="20" uuid="fcd25079-255c-44c6-a33e-faca897cab9d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="269" y="450" width="119" height="20" uuid="6407d883-f9fc-4bba-b674-d3d2b33f18f0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="388" y="381" width="119" height="49" uuid="b0eeb388-1d6d-41ce-8be6-395d25a3fe6e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="388" y="430" width="119" height="20" uuid="b38ccd16-dc2c-4151-9cd0-0161fcf63f56"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="388" y="450" width="119" height="20" uuid="e8ddc0e3-59f0-4d02-9525-a83e42e9e618"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="48" y="381" width="221" height="49" uuid="e9ae94d5-e38f-46f9-bc66-f4d357bee4eb"/>
+				<textFieldExpression><![CDATA[$P{referente} + ".\n" + "Referente parcela: "+ $P{numeroParcela}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="269" y="368" width="119" height="13" uuid="ca45c681-d7eb-4b67-8c0b-9aca892de97b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[UNITARIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="368" width="119" height="13" uuid="4bc46553-50ba-45e8-8d75-f607d3a6dd9f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="450" width="119" height="20" uuid="1a2cab96-9ef0-4dae-96b5-c49cee93bc23"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL:  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="552" width="53" height="20" uuid="0dd2bd45-a4e8-4ec3-93c8-47131a42ed58"/>
+				<text><![CDATA[Caruaru, ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="335" y="552" width="166" height="20" uuid="cc144694-f4d5-40f4-a006-6c2f1022e425"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="269" y="394" width="119" height="20" uuid="9ea2c9e4-19ca-442c-bbd6-377ba473b35d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{valor}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="388" y="394" width="119" height="20" uuid="c557b23c-0272-4893-83ad-7962ba9d24e8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{valor}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="388" y="450" width="119" height="20" uuid="c5dbd1f8-5c1c-41c5-a6d0-a979a07091fc"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valor}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="181" width="494" height="104" isPrintWhenDetailOverflows="true" uuid="a426052a-f600-453c-8325-7d2e2e25a503"/>
+				<textFieldExpression><![CDATA["Recebemos de " + $P{nome_fantasia}.toUpperCase()
++ ", CNPJ: " + $P{cnpj} + " Endereço: "+$P{endereco}+", "+$P{numero}+" - "+$P{bairro}+", "+$P{municipio}+", " + " Telefone: " + $P{telefone}
++ " a importância de " +new java.text.DecimalFormat("¤ #,##0.00").format($P{valor}) + " (" + $P{extenso} + ") referente a: "]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="8" width="492" height="22" uuid="a426052a-f600-453c-8325-7d2e2e25a503"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA["Recebemos de " + $P{nome_fantasia} +", CNPJ: " + $P{cnpj}  +"a importancia de R$ " + new java.text.DecimalFormat("¤ #,##0.00").format($P{valor}) + " ( " + $P{extenso} + " )"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="bca721b2-0dbf-4563-b151-4d7f79021116"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="492" y="8" width="63" height="22" uuid="5f72503e-e5e1-414d-a349-c2b4dd701c18"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA["Conta: "+$P{conta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="30" width="185" height="20" uuid="09e32315-190c-4021-85b9-d80a1d8430c5"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[Data Recebimento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="30" width="370" height="20" uuid="263017fb-5659-4042-8efa-b930fa9983ca"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[Assinatura Responsável: _________________________________________]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+</jasperReport>

@@ -1,0 +1,19 @@
+<retEnvEvento xmlns="http://www.portalfiscal.inf.br/nfe" versao="1.00">
+<idLote>1001000009</idLote>
+<tpAmb>1</tpAmb>
+<verAplic>NFEPE_P_08.01.00.045</verAplic>
+<cOrgao>26</cOrgao>
+<cStat>128</cStat>
+<xMotivo>Lote de Evento Processado</xMotivo><retEvento versao="1.00">
+<infEvento>
+<tpAmb>1</tpAmb>
+<verAplic>NFEPE_P_08.01.00.045</verAplic>
+<cOrgao>26</cOrgao>
+<cStat>135</cStat>
+<xMotivo>Evento registrado e vinculado a NF-e</xMotivo>
+<chNFe>26140203488055000180550010000000091584911255</chNFe>
+<tpEvento>110111</tpEvento>
+<xEvento>Cancelamento homologado</xEvento>
+<nSeqEvento>1</nSeqEvento>
+<dhRegEvento>2014-02-03T13:29:55-03:00</dhRegEvento><nProt>126140005753089</nProt></infEvento>
+</retEvento></retEnvEvento>

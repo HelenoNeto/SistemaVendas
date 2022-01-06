@@ -1,0 +1,11 @@
+<retEnviNFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
+<tpAmb>2</tpAmb>
+<verAplic>NFEPE_H_07.01.00.043</verAplic>
+<cStat>103</cStat>
+<xMotivo>Lote recebido com sucesso</xMotivo>
+<cUF>26</cUF>
+<dhRecbto>2013-11-12T18:07:39</dhRecbto>
+<infRec>
+<nRec>261130000740019</nRec>
+<tMed>1</tMed>
+</infRec></retEnviNFe>

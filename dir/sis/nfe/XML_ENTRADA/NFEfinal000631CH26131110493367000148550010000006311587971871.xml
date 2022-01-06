@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
+
+
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe Id="NFe26131110493367000148550010000006311587971871" versao="2.00">
+    <ide>
+      <cUF>26</cUF>
+      <cNF>58797187</cNF>
+      <natOp>VENDA DE MERC ADQ OU REC DE TERC C ST</natOp>
+      <indPag>1</indPag>
+      <mod>55</mod>
+      <serie>1</serie>
+      <nNF>631</nNF>
+      <dEmi>2013-11-25</dEmi>
+      <tpNF>1</tpNF>
+      <cMunFG>2604106</cMunFG>
+      <tpImp>1</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV>1</cDV>
+      <tpAmb>1</tpAmb>
+      <finNFe>1</finNFe>
+      <procEmi>0</procEmi>
+      <verProc>1.01</verProc>
+    </ide>
+    <emit>
+      <CNPJ>10493367000148</CNPJ>
+      <xNome>GERALDO JOAO DA SILVA ME</xNome>
+      <xFant>G3 INFORMATICA</xFant>
+      <enderEmit>
+        <xLgr>RUA ALFERES JORGE</xLgr>
+        <nro>176</nro>
+        <xCpl>LOJA</xCpl>
+        <xBairro>INDIANOPOLIS</xBairro>
+        <cMun>2604106</cMun>
+        <xMun>CARUARU</xMun>
+        <UF>PE</UF>
+        <CEP>55024130</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>8137254926</fone>
+      </enderEmit>
+      <IE>038512149</IE>
+      <CRT>2</CRT>
+    </emit>
+    <dest>
+      <CNPJ>02505332000153</CNPJ>
+      <xNome>EDVALDO PAULO LIRA MERCADINHO</xNome>
+      <enderDest>
+        <xLgr>AVENIDA VINTE DE DEZEMBRO</xLgr>
+        <nro>63</nro>
+        <xBairro>CENTRO</xBairro>
+        <cMun>2604502</cMun>
+        <xMun>CHA GRANDE</xMun>
+        <UF>PE</UF>
+        <CEP>55636000</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>8135371217</fone>
+      </enderDest>
+      <IE>024728721</IE>
+      <email>SUPEREWERTON@BOL.COM.BR</email>
+    </dest>
+    <det nItem="1">
+      <prod>
+        <cProd>0000000000531</cProd>
+        <cEAN/>
+        <xProd>CONECTORES BMC MOLA RG59 PARAFUSO</xProd>
+        <NCM>85369010</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>15.0000</qCom>
+        <vUnCom>4.0000</vUnCom>
+        <vProd>60.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>15.0000</qTrib>
+        <vUnTrib>4.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>60.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>0.39</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>60.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>1.80</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="2">
+      <prod>
+        <cProd>7898917757062</cProd>
+        <cEAN/>
+        <xProd>DOME ARTICULADO PRETO</xProd>
+        <NCM>39269090</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>8.0000</qCom>
+        <vUnCom>20.0000</vUnCom>
+        <vProd>160.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>8.0000</qTrib>
+        <vUnTrib>20.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS40>
+            <orig>0</orig>
+            <CST>40</CST>
+          </ICMS40>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>160.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>1.04</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>160.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>4.80</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="3">
+      <prod>
+        <cProd>7898939550603</cProd>
+        <cEAN/>
+        <xProd>NOBREAK NHS PREMIUM PDV 800VA COR PRETA</xProd>
+        <NCM>85044040</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>880.0000</vUnCom>
+        <vProd>880.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>880.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>880.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>5.72</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>880.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>26.40</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="4">
+      <prod>
+        <cProd>0000000000560</cProd>
+        <cEAN/>
+        <xProd>CABO MONTADO C ENG RAP P EXPANSAO DE BATR08</xProd>
+        <NCM>00</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>3.0000</qCom>
+        <vUnCom>120.0000</vUnCom>
+        <vProd>360.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>3.0000</qTrib>
+        <vUnTrib>120.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS40>
+            <orig>0</orig>
+            <CST>40</CST>
+          </ICMS40>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>360.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>2.34</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>360.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>10.80</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="5">
+      <prod>
+        <cProd>7898451270577</cProd>
+        <cEAN/>
+        <xProd>FONTE P CFTV 12V 5ACOMPACTA P 08MINI CAMERAS</xProd>
+        <NCM>85044029</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>110.0000</vUnCom>
+        <vProd>110.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>110.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISOutr>
+            <CST>99</CST>
+            <vBC>110.00</vBC>
+            <pPIS>0.00</pPIS>
+            <vPIS>0.00</vPIS>
+          </PISOutr>
+        </PIS>
+        <COFINS>
+          <COFINSOutr>
+            <CST>99</CST>
+            <vBC>110.00</vBC>
+            <pCOFINS>0.00</pCOFINS>
+            <vCOFINS>0.00</vCOFINS>
+          </COFINSOutr>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="6">
+      <prod>
+        <cProd>7896637625258</cProd>
+        <cEAN/>
+        <xProd>MINI CAMERA CCD SONY SUPER HAD II 14 380L 0.3 LUX INTELBRAS</xProd>
+        <NCM>85258029</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>8.0000</qCom>
+        <vUnCom>100.0000</vUnCom>
+        <vProd>800.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>8.0000</qTrib>
+        <vUnTrib>100.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>800.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>5.20</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>800.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>24.00</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="7">
+      <prod>
+        <cProd>7898943660145</cProd>
+        <cEAN/>
+        <xProd>CAMERA IR GIGA 25M CCD SONY 13 420TVL 3.6MM 24</xProd>
+        <NCM>85254090</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>3.0000</qCom>
+        <vUnCom>270.0000</vUnCom>
+        <vProd>810.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>3.0000</qTrib>
+        <vUnTrib>270.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>810.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>5.26</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>810.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>24.30</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="8">
+      <prod>
+        <cProd>7898930918907</cProd>
+        <cEAN/>
+        <xProd>TV MONITOR LED 21.5 F.HD SAMSUNG</xProd>
+        <NCM>00</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>470.0000</vUnCom>
+        <vProd>470.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>470.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS40>
+            <orig>0</orig>
+            <CST>40</CST>
+          </ICMS40>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>470.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>3.06</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>470.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>14.10</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="9">
+      <prod>
+        <cProd>0718037773421</cProd>
+        <cEAN/>
+        <xProd>HD INT. 500GB 7.2RPM SATA2 WESTERN DIGITAL</xProd>
+        <NCM>84717012</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>299.0000</vUnCom>
+        <vProd>299.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>299.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>299.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>1.94</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>299.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>8.97</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <det nItem="10">
+      <prod>
+        <cProd>7898943660800</cProd>
+        <cEAN/>
+        <xProd>DVR STAND ALONE 16 CANAIS GIGA</xProd>
+        <NCM>85219010</NCM>
+        <CFOP>5405</CFOP>
+        <uCom>UND</uCom>
+        <qCom>1.0000</qCom>
+        <vUnCom>1300.0000</vUnCom>
+        <vProd>1300.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>1.0000</qTrib>
+        <vUnTrib>1300.0000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS60>
+            <orig>0</orig>
+            <CST>60</CST>
+            <vBCSTRet>0.00</vBCSTRet>
+            <vICMSSTRet>0.00</vICMSSTRet>
+          </ICMS60>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPINT>
+            <CST>53</CST>
+          </IPINT>
+        </IPI>
+        <PIS>
+          <PISAliq>
+            <CST>01</CST>
+            <vBC>1300.00</vBC>
+            <pPIS>0.65</pPIS>
+            <vPIS>8.45</vPIS>
+          </PISAliq>
+        </PIS>
+        <COFINS>
+          <COFINSAliq>
+            <CST>01</CST>
+            <vBC>1300.00</vBC>
+            <pCOFINS>3.00</pCOFINS>
+            <vCOFINS>39.00</vCOFINS>
+          </COFINSAliq>
+        </COFINS>
+      </imposto>
+    </det>
+    <total>
+      <ICMSTot>
+        <vBC>0.00</vBC>
+        <vICMS>0.00</vICMS>
+        <vBCST>0.00</vBCST>
+        <vST>0.00</vST>
+        <vProd>5249.00</vProd>
+        <vFrete>0.00</vFrete>
+        <vSeg>0.00</vSeg>
+        <vDesc>0.00</vDesc>
+        <vII>0.00</vII>
+        <vIPI>0.00</vIPI>
+        <vPIS>33.40</vPIS>
+        <vCOFINS>154.17</vCOFINS>
+        <vOutro>0.00</vOutro>
+        <vNF>5249.00</vNF>
+      </ICMSTot>
+    </total>
+    <transp>
+      <modFrete>0</modFrete>
+    </transp>
+  </infNFe>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#NFe26131110493367000148550010000006311587971871"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>qpTuOOy5ncLxKyRsn65ViTDIS3k=</DigestValue></Reference></SignedInfo><SignatureValue>qu2NyRn4134XEKZU7rj4dfxZDd1pdeEgZQufDRe93WCW7nqFKI7EG1Hf7ap7sHeQ8tCxpvHlxlAp
++/PUZXKSJ7+C2bn3bVAfVHrDPPKLL3V8EYWAQzaeSFFcS2JFTCr6FgvWjkyyEmXT2zmM8i9qgRel
+mZ3Qz/sWGn12YCnV1OboprO/hQfEsewkZm8NyMlr++1pzR++Vgzdrrh7MFf+Xzvm+dR27g/ZDsXG
+u8I72xXN0rgEPgYeagDyoyJFS06n7V99AhPy52LZqr8UrJqBZM+3Zkh6IF5tvVKeWbFEdXfj+2YB
+B6JWmKustgATdhBqO+d+95EC9jjlm2BtTzePfg==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIVDCCBjygAwIBAgIQaN5gWsShPQEbK3QV74KXUTANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh
+IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4X
+DTEyMTIyODAwMDAwMFoXDTE1MTIyNzIzNTk1OVowgf0xCzAJBgNVBAYTAkJSMRMwEQYDVQQKFApJ
+Q1AtQnJhc2lsMQswCQYDVQQIEwJQRTEQMA4GA1UEBxQHQ0FSVUFSVTE2MDQGA1UECxQtU2VjcmV0
+YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYDVQQLFA1SRkIgZS1D
+TlBKIEEzMTgwNgYDVQQLFC9BdXRlbnRpY2FkbyBwb3IgQ2VydGlzaWduIENlcnRpZmljYWRvcmEg
+RGlnaXRhbDEwMC4GA1UEAxMnR0VSQUxETyBKT0FPIERBIFNJTFZBIE1FOjEwNDkzMzY3MDAwMTQ4
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArsvZkC7iLKn5NzL1QYM+u9jXldAubhIG
+Fbj8J35gBmnSr3exprVqdsU2iHYEW28a45SfrIqY50zJw1QTwp0Dpb3GqL9NP/FZUAmNNAswvVE0
+Qc8ygDWy0Qt15inJDRX8GHQV2EDyVyYAd6MQJRtCfqnZ1Zz5vtQhiNpVnuyDxwrlquT1ux/Tgt09
+9qnT7fhhT+K05A5ChUQ71b6JUN9Z5S2h1V0ODlpBqllbK6ygGiyFJuW/p9o+QQEnPpnRDyciqIca
+IZ0DZnIcOcEKeu2weGsJU9ykTVFkU7XKY6g1xgRjEwyQTWd+qxDcPHk+td5fu0tgH+YWTlu9juSt
+p40uCQIDAQABo4IDUjCCA04wgbcGA1UdEQSBrzCBrKA4BgVgTAEDBKAvBC0wODEyMTk2OTY4NDQ1
+MDkxNDY4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDCgIAYFYEwBAwKgFwQVR0VSQUxETyBKT0FP
+IERBIFNJTFZBoBkGBWBMAQMDoBAEDjEwNDkzMzY3MDAwMTQ4oBcGBWBMAQMHoA4EDDAwMDAwMDAw
+MDAwMIEaZ2VyYWxkb0BnM2F1dG9tYWNhby5jb20uYnIwCQYDVR0TBAIwADAfBgNVHSMEGDAWgBQu
+kerWbeWyWYLcOIUpdjQWVjzQPjAOBgNVHQ8BAf8EBAMCBeAwfwYDVR0gBHgwdjB0BgZgTAECAwYw
+ajBoBggrBgEFBQcCARZcaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0
+b3Jpby9kcGMvQUNfQ2VydGlzaWduX1JGQi9EUENfQUNfQ2VydGlzaWduX1JGQi5wZGYwggEWBgNV
+HR8EggENMIIBCTBXoFWgU4ZRaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBv
+c2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25SRkJHNC9MYXRlc3RDUkwuY3JsMFagVKBShlBodHRwOi8v
+aWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZC
+RzQvTGF0ZXN0Q1JMLmNybDBWoFSgUoZQaHR0cDovL3JlcG9zaXRvcmlvLmljcGJyYXNpbC5nb3Yu
+YnIvbGNyL0NlcnRpc2lnbi9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYw
+FAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGbBggrBgEFBQcBAQSBjjCBizBfBggrBgEFBQcwAoZTaHR0
+cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3Mv
+QUNfQ2VydGlzaWduX1JGQl9HNC5wN2MwKAYIKwYBBQUHMAGGHGh0dHA6Ly9vY3NwLmNlcnRpc2ln
+bi5jb20uYnIwDQYJKoZIhvcNAQELBQADggIBAEq81+h2eSm5Jtdc9n7wdcTAe/7lA6vWKGhew/3x
+LjR7cKStU5PjNSgaFKUz066hIDz/rZSYJ04g0Q2jn707vyn61kjoq27X5D8ikFbcrqbE9XW2aesj
+rgAukUUR6mGt/hrpYfIh9zYfx42EGdMGuxSqr+0MTADTrCWH6exeqr3n9JXkVP50Ci/zXfF9FhQc
+/b2V6XlddzFP9BlqJ2iBokP367jI1T36hhLHhSKnSS2yCC8hgvFOxBFuVeIxRLK2Ofy1iSiSVQM5
+cdY/c2rvs0A8C1X/17CdwLwBBTYe32LA7YUCfzM9MfB/fAZlK6bJdr4Mm9zrQs9NV+1de7WumVV1
+J8zrMpB629nEcpl5d+K4VJEoVMTwxyuUud+w7b4g23y+x+fJ0d2H47XH/ooM432cynHZ8PrkB9mO
+/390xDawhApoh0Az86t2FqCCjVFzdrj7TQnR3mxrwkv0Bjm1MIqandKA06OckTUvJrnK4Fq53MAj
+O3GLWastnE/vVjcUTxcQT/a6/tXZAcfpqJnXEnqgbj584KeUKO11c6B/1gDMx0t8mCZ7/G9I1gdj
+8KxIvDbEWYNsHUgk7N3ACLc4PEo1bv5l95L0jBdqxuQHDMQLDFlt3U6zvr3RTANazvYUSNrlrI3p
+rq7vFRbYKZv7E7ptcesTQxtyvkERZCnWrXwf</X509Certificate></X509Data></KeyInfo></Signature></NFe>
+
+<protNFe versao="2.00"><infProt Id="NFe1"><tpAmb>1</tpAmb>
+<verAplic>NFEPE_P_07.01.00.043</verAplic>
+<chNFe>26131110493367000148550010000006311587971871</chNFe>
+<dhRecbto>2013-11-25T10:36:02</dhRecbto><nProt>126130055708141</nProt>
+<digVal>qpTuOOy5ncLxKyRsn65ViTDIS3k=</digVal><cStat>100</cStat>
+<xMotivo>Autorizado o uso da NF-e</xMotivo>
+</infProt></protNFe>
+</nfeProc>

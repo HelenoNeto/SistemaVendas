@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><enviNFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00">
+<idLote>000002001000044</idLote>
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+  <infNFe Id="NFe26140111370225000156550010000000441877923054" versao="2.00">
+    <ide>
+      <cUF>26</cUF>
+      <cNF>87792305</cNF>
+      <natOp>DEVOLUCAO DE COMPRA PARA COMERCIALIZACAO</natOp>
+      <indPag>1</indPag>
+      <mod>55</mod>
+      <serie>1</serie>
+      <nNF>44</nNF>
+      <dEmi>2014-01-29</dEmi>
+      <tpNF>1</tpNF>
+      <cMunFG>2601300</cMunFG>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV>4</cDV>
+      <tpAmb>2</tpAmb>
+      <finNFe>1</finNFe>
+      <procEmi>0</procEmi>
+      <verProc>1.01</verProc>
+    </ide>
+    <emit>
+      <CNPJ>11370225000156</CNPJ>
+      <xNome>DANIEL ALVES DA SILVA</xNome>
+      <xFant>FRIGORIFICO FORTALEZA</xFant>
+      <enderEmit>
+        <xLgr>AVENIDA AFONSO ALVES</xLgr>
+        <nro>122</nro>
+        <xCpl>SR.MIGUEL</xCpl>
+        <xBairro>NOVA ESPERANCA</xBairro>
+        <cMun>2601300</cMun>
+        <xMun>BARRA DE GUABIRABA</xMun>
+        <UF>PE</UF>
+        <CEP>55690000</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+        <fone>8137581076</fone>
+      </enderEmit>
+      <IE>038979667</IE>
+      <CRT>2</CRT>
+    </emit>
+    <dest>
+      <CPF>07403733401</CPF>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>RUA LIMA BARRETO</xLgr>
+        <nro>1010</nro>
+        <xBairro>DIVINOPOLIS</xBairro>
+        <cMun>2604106</cMun>
+        <xMun>CARUARU</xMun>
+        <UF>PE</UF>
+        <CEP>55010330</CEP>
+        <cPais>1058</cPais>
+        <xPais>Brasil</xPais>
+      </enderDest>
+      <IE>ISENTO</IE>
+      <email>heleno@g3automacao.com.br</email>
+    </dest>
+    <det nItem="1">
+      <prod>
+        <cProd>785</cProd>
+        <cEAN/>
+        <xProd>SABONETE LUX</xProd>
+        <NCM>00</NCM>
+        <CFOP>5411</CFOP>
+        <uCom>UND</uCom>
+        <qCom>60.0000</qCom>
+        <vUnCom>8.9000</vUnCom>
+        <vProd>534.00</vProd>
+        <cEANTrib/>
+        <uTrib>UND</uTrib>
+        <qTrib>60.0000</qTrib>
+        <vUnTrib>8.9000</vUnTrib>
+        <indTot>1</indTot>
+      </prod>
+      <imposto>
+        <ICMS>
+          <ICMS10>
+            <orig>0</orig>
+            <CST>10</CST>
+            <modBC>0</modBC>
+            <vBC>534.00</vBC>
+            <pICMS>17.00</pICMS>
+            <vICMS>90.78</vICMS>
+            <modBCST>0</modBCST>
+            <pMVAST>20.00</pMVAST>
+            <vBCST>640.80</vBCST>
+            <pICMSST>0.17</pICMSST>
+            <vICMSST>18.15</vICMSST>
+          </ICMS10>
+        </ICMS>
+        <IPI>
+          <cEnq>999</cEnq>
+          <IPITrib>
+            <CST>99</CST>
+            <vBC>534.00</vBC>
+            <pIPI>0.00</pIPI>
+            <vIPI>0.00</vIPI>
+          </IPITrib>
+        </IPI>
+        <PIS>
+          <PISOutr>
+            <CST>99</CST>
+            <vBC>534.00</vBC>
+            <pPIS>0.00</pPIS>
+            <vPIS>0.00</vPIS>
+          </PISOutr>
+        </PIS>
+        <COFINS>
+          <COFINSOutr>
+            <CST>99</CST>
+            <vBC>534.00</vBC>
+            <pCOFINS>0.00</pCOFINS>
+            <vCOFINS>0.00</vCOFINS>
+          </COFINSOutr>
+        </COFINS>
+      </imposto>
+    </det>
+    <total>
+      <ICMSTot>
+        <vBC>534.00</vBC>
+        <vICMS>90.78</vICMS>
+        <vBCST>640.80</vBCST>
+        <vST>18.16</vST>
+        <vProd>534.00</vProd>
+        <vFrete>0.00</vFrete>
+        <vSeg>0.00</vSeg>
+        <vDesc>0.00</vDesc>
+        <vII>0.00</vII>
+        <vIPI>0.00</vIPI>
+        <vPIS>0.00</vPIS>
+        <vCOFINS>0.00</vCOFINS>
+        <vOutro>0.00</vOutro>
+        <vNF>552.16</vNF>
+      </ICMSTot>
+    </total>
+    <transp>
+      <modFrete>0</modFrete>
+    </transp>
+  </infNFe>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#NFe26140111370225000156550010000000441877923054"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>EjNQYaEpbJ/64fuD7ZTtE7o/Huc=</DigestValue></Reference></SignedInfo><SignatureValue>c4ngX/XdryKLsPtjUxpbdNze52UJtwh2FKHJTckdhbb5QsLqZY+Ko0UcKJ93B0Xj1kignvmTipfR
+g6Xi8dlMRONKbcFoDUl9dysO0s0oCG9eKv8Avu9agN7mBnSu9G9FaZ65/thQKghuXpuTTG8HXBNX
+Ux3mmBtOc7xJ15VLwTu7cJUoBip9pxpb/qS6OfGTLvt61f3gQUSf5is4WDgiLi8aEak+ZgcXftll
+8pUN5PKqNAXXznqKglIyzkgTti7Y/LdJ9P/kOzeD12vjjYqxDZtYLqn7UbyL8Pk55JpEgOWzd/8H
+NZIqpSx4Nc3Qt+bI+JRahYh1dt8GC2lgIMPKJQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIZDCCBkygAwIBAgIQe6bqdn8uwMQyWZcK/Kz9kjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh
+IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4X
+DTEzMDYyMTAwMDAwMFoXDTE0MDYyMDIzNTk1OVowggEEMQswCQYDVQQGEwJCUjETMBEGA1UEChQK
+SUNQLUJyYXNpbDELMAkGA1UECBMCUEUxGzAZBgNVBAcUEkJBUlJBIERFIEdVQUJJUkFCQTE2MDQG
+A1UECxQtU2VjcmV0YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYD
+VQQLFA1SRkIgZS1DTlBKIEExMS4wLAYDVQQLFCVBdXRlbnRpY2FkbyBwb3IgQVIgUkcgRW1wcmVl
+bmRpbWVudG9zMTYwNAYDVQQDEy1KIE0gREUgT0xJVkVJUkEgRlJJR09SSUZJQ08gTUU6MTEzNzAy
+MjUwMDAxNTYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+JHTYb3LOtUwNgfkqgfA1
+UB/jUYxavs+OeAte2NW/VY7GkqzvIZrayWi23BIL+PV147ghiaY/6nZkXuDJfYX/PV7wTBEXMi/r
+SDgwTPTPupvI2N28uSBrEZeaZde/hMC3Lypy8HdYVQNJnQmlYM2YpNtAGtLq56daL0Gvd7ThPSAw
+hTMKja/ZRurGWkZwgJPYVMZGOobhB42mHtrw52+wLLq3mdp1llvJKEK3Pgkj/RdxY0Azk7Tzb/cY
+T8qWwD21YUAccAlvc6qkXN+mJrxZbaLvzmRk66Ju4zKwuidBMFZZXyvsN6AwvPqgPJh26K3DLtuY
+42mfzwdwyP5b03RlAgMBAAGjggNaMIIDVjCBvwYDVR0RBIG3MIG0oD0GBWBMAQMEoDQEMjE0MDcx
+OTgwMDM1NDQ2Nzg0MDMwMDAwMDAwMDAwMDAwMDAwMDAwNjEwNDQ2N1NTUFBFoCIGBWBMAQMCoBkE
+F0pPU0UgTUlHVUVMIERFIE9MSVZFSVJBoBkGBWBMAQMDoBAEDjExMzcwMjI1MDAwMTU2oBcGBWBM
+AQMHoA4EDDAwMDAwMDAwMDAwMIEbYm9uaXRvY29udGFiaWxAeWFob28uY29tLmJyMAkGA1UdEwQC
+MAAwHwYDVR0jBBgwFoAULpHq1m3lslmC3DiFKXY0FlY80D4wDgYDVR0PAQH/BAQDAgXgMH8GA1Ud
+IAR4MHYwdAYGYEwBAgEMMGowaAYIKwYBBQUHAgEWXGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2ln
+bi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9SRkIvRFBDX0FDX0NlcnRpc2ln
+bl9SRkIucGRmMIIBFgYDVR0fBIIBDTCCAQkwV6BVoFOGUWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRp
+c2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzQvTGF0ZXN0Q1JMLmNy
+bDBWoFSgUoZQaHR0cDovL2ljcC1icmFzaWwub3V0cmFsY3IuY29tLmJyL3JlcG9zaXRvcmlvL2xj
+ci9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9yZXBvc2l0b3Jp
+by5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25SRkJHNC9MYXRlc3RD
+UkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBmwYIKwYBBQUHAQEEgY4wgYsw
+XwYIKwYBBQUHMAKGU2h0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9y
+aW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9SRkJfRzQucDdjMCgGCCsGAQUFBzABhhxodHRw
+Oi8vb2NzcC5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQBowSkKYipmWrBcB8/N
+nGW3DmOyRIUUcw1bwSblKjj6YLGB4hcytDdmPrBcuZ9vgZ7QSIbwkODRQ4UTjeLtAE9azj8CLaS9
+UY9AusHDcTIJFWw6jXKcpaH753iaDuEk6fDBaLwbQYCtC/WFPLWBHpVFc1JgmoP4yRIr/lZJAJA7
+k3iSA0F5qZEtZxtpP4T+YX90oHNZLsT/QATWipRE8MqJdNPX8NvAudwvYYxJBU3Vt3zjQTeCDZKs
+ttX/yheqTL3mUehVkHVRQjdBsbFQYflVHzDBZolbPK8dtwdK535QPQn+lpnJwiQW2vv+K6djgjrm
+sk09ah+/E1PJQzNTo30A3wjZMt6ZG7KJuIwGvZ5zcDcI1bwdqaRvnqsacmh1iaFLgfh9NWi1X67x
+Yw+7tAQxvESU05CilAXNS42n3iTooWiJywhZOK5SShH62gZoXT9CJApdwWqzdx4MHYLZG++5Ghaj
+CkFBeeeqnG3qxoCgpU70TPS9Zb7nieX+p7L5ICIiC0gEwbe/ClUsrRi/SQGGVrhB1c4OOCH+d1hU
+S1uVAfdULLc/3UyRIEoHjASs1m5wPFwTKB1YtmPMtz0mHhrHegog89vaW9KWwGcxnrR/Ieq2qKof
+7HhDWAF+dMQTEiQAIEag9kC88aaGF60lp/Xr5uAP3Kx0lVEJ+nvpwFTfHA==</X509Certificate></X509Data></KeyInfo></Signature></NFe>
+</enviNFe>
